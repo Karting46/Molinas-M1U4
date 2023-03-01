@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea U4 Ejer2 JS</title>
+</head>
+
+<body>
+    <script>
+        const numeros = [1, 2, 3, 4, 5];
+        numeros[0] = parseInt(prompt('Ingrese el primer número:', ''));
+        numeros[1] = parseInt(prompt('Ingrese el segundo número:', ''));
+        numeros[2] = parseInt(prompt('Ingrese el tercer número:', ''));
+        numeros[3] = parseInt(prompt('Ingrese el cuarto número:', ''));
+        numeros[4] = parseInt(prompt('Ingrese el quinto número:', ''));
+        let mayor = 0;
+
+        for (let i = 0; i < numeros.length; i++) {
+            if (mayor < numeros[i]) {
+                mayor = numeros[i]
+            }
+        }
+
+        document.write('El número mayor del listado ingresado es:' + mayor);
+
+    </script>
+</body>
+
+</html>
